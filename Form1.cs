@@ -104,7 +104,7 @@ namespace VirtualPong
 
         private void updateGraphics(object sender, PaintEventArgs e)
         {
-            // this is where we will see the snake and its parts moving
+           
 
             Graphics canvas = e.Graphics; // create a new graphics class called canvas
 
@@ -190,7 +190,7 @@ namespace VirtualPong
             /*la funzione agisce calcolando il triangolo formato da PnewposX+X e PnewposY+Y, 
             trovandone l'angolo e cosi risalendo alla posizione Y dove deve sistemarsi SX */
 
-            /*lo schema predittivo può esser allargato calcolando il triangolo che genera nel caso in cui urti un lato orizzontale*/
+            /*lo schema predittivo puÃ² esser allargato calcolando il triangolo che genera nel caso in cui urti un lato orizzontale*/
 
             double prod = (Ball.X) * (Ball.X) + (Ball.Y) * (Ball.Y);
 
@@ -265,7 +265,7 @@ namespace VirtualPong
                 }
             for (int i = 0; i < 5; i++)
             {
-                if (Regolator == 1)//regolatore di velocità della pallina
+                if (Regolator == 1)//regolatore di velocitÃ  della pallina
                 {
                         Regolator = 0;
                         if (Ball.X < -23)
